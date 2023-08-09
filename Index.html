@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tmr</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+/* sessão header */
+
+header {
+    background-color: #CDD5D7;
+    
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/Hero-sec.png");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+}
+
+.hero-container {
+    display: flex;
+    max-width: 648px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 38px 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 16px;
+    background: rgba(37, 37, 37, 0.40);
+    backdrop-filter: blur(4px);
+}
+
+.hero-container h1 {
+    color:#FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-width: 610px) {
+    .hero-container h1 {
+        font-size: 28px;
+
+    }
+
+}
+
+.hero-container p {
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-container a {
+    display: flex;
+    max-width: 344px;
+    height: 52px;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-decoration: none;
+    border-radius: 150px;
+    background: #00A335;
+    opacity: 1;
+    transition: opacity 1s ease 0s;
+}
+
+.hero-container a:hover {
+    opacity: 0.6;
+}
+
+
+/* sessão header */
+
+
+/* sessão iflet */
+
+  .iflet {
+    background-color: #232323;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-iflet{
+    display: flex;
+   
+    
+    gap: 60px;
+  }
+
+  .conteudo-iflet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 403px;
+    row-gap: 24px;
+  }
+
+  .conteudo-iflet  h3 {
+    color:  #FFF;
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .container-iflet  h2 {
+    color: #ffffff;
+    font-family: Nunito;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .conteudo-iflet  p {
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .container-iflet  a {
+    display: flex;
+    width: 233px;
+    height: 52px;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 24px */
+    text-decoration-line: none;
+    border: 1px #fff solid;
+    border-radius: 150px;
+    opacity: 1;
+    transition: opacity 1s ease 0s;
+  }
+
+  .container-iflet a:hover {
+    opacity: 0.6;
+  }
+
+
+  @media (max-width: 940px) {
+    .container-iflet {
+        flex-direction: column;
+    }
+  }
+
+/* sessão iflet */
+
+/* sessão Aplicação */
+
+.aplicacao {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-right: 120px;
+    padding-left: 120px;
+}
+
+.container-aplicacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.conteudo-aplicacao {
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.conteudo-aplicacao h2 {
+    color: #3E5055;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.conteudo-aplicacao p {
+    color:#8B979F;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fotos-aplicacao {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+@media (max-width: 940px) {
+    .aplicacao {
+     
+        padding-top: 90px;
+        padding-bottom: 90px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+    
+
+    .fotos-aplicacao {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+    }
+
+}
+
+@media (max-width: 690px) {
+    .fotos-aplicacao {
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    }
+
+    .aplicacao {
+     
+        padding-top: 90px;
+        padding-bottom: 90px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+}
+
+
+.logistica:hover {
+    
+    
+}
+
+
+/* sessão Aplicação */
+
+/* sessão cases */
+
+.cases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B2A28;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.conteudo-cases h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.container-cases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 38px;
+}
+
+.video-cases iframe {
+    width: 1074px;
+    height: 604px;
+    
+}
+
+@media (max-width: 1100px) {
+    .video-cases iframe {
+        width: 792px;
+        height: 445.5px;
+    }
+}
+
+@media (max-width: 810px) {
+    .video-cases iframe {
+        width: 586.78px;
+        height: 330.06px;
+    }
+
+    .conteudo-cases h2 {
+        font-size: 24px;
+
+    }
+}
+
+@media (max-width: 610px) {
+    .video-cases iframe {
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media (max-width: 420px) {
+    .video-cases iframe {
+        width: 320px;
+        height: 180px;
+    }
+}
+
+/* sessão cases */
+
+/* sessão solucao */
+
+.solucao {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.container-solucao {
+    display: flex;
+    column-gap: 100px;
+}
+
+.conteudo-solucao  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 32px;
+    max-width: 607px;
+}
+
+.conteudo-solucao h2 {
+    color: #232323;
+    font-family: Nunito;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.container-solucao p {
+    overflow: hidden;
+    color: #8B979F;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.container-solucao a {
+    background-color: #00A335;
+    max-width: 340px;
+    padding: 14px 24px;
+    color: #FFF;
+    font-family: Nunito;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    text-decoration: none; 
+    border-radius: 150px;
+    opacity: 1;
+    transition: opacity 1s ease 0s;
+}
+
+.container-solucao a:hover {
+    opacity: 0.6;
+}
+
+.solucao-second {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 1200px) {
+    .container-solucao {
+        padding-left: 20px;
+        padding-right: 20px;
+        column-gap: 40px;
+    }
+  }
+
+
+  @media (max-width: 1048px) {
+    .container-solucao {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+  }
+/* sessão solucao */
+
+
+/* sessão testimonials */
+
+.depoimentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url("http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/texture.png");
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container-depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 48px;
+}
+
+.conteudo-depoimentos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    max-width: 499px;
+}
+
+.conteudo-depoimentos h3 {
+    color: #00A335;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.conteudo-depoimentos h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 600px) {
+    .conteudo-depoimentos h2 {
+        color: #FFF;
+        text-align: center;
+        font-family: Nunito;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+  }
+
+
+.depoimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.depoimento-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 27px;
+    margin: 16px;
+    row-gap: 12px;
+    background-color: #fff;
+    width: 300px;
+    height: 275px;
+    border-radius: 20px;
+}
+
+.depoimento-one h3 {
+    color: #3A3A3A;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.depoimento-one legend {
+    color: #8f8f8f;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.depoimento-one p {
+    color: #767676;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* sessão testimonials */
+
+/* sessão Modal */
+
+.necessidade {
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.conteudo-necessidade {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 0px;
+    max-width: 1216px;
+}
+
+@media (max-width: 860px) {
+    .conteudo-necessidade {
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+}
+
+.necessidades {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 40px;
+    max-width: 581px;
+    width: 100%;
+    max-height: 159px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.necessidades h3 {
+    max-width: 260px;
+    color: rgba(35, 35, 35, 0.60);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    padding: 16px;
+}
+
+.necessidades img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.container-necessidade h2 {
+    color: #232323;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.container-necessidade h2 span {
+    color: #48A054;
+    font-family: Nunito;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+@media (max-width: 612px) {
+    .container-necessidade h2 {
+        font-size: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }   
+
+    .container-necessidade h2 span {
+        font-size: 24px;
+    }
+}
+
+.container-necessidade {
+    display: flex; 
+    row-gap: 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.necessidade button {
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container-modal {
+    background-color: #fff;
+    max-width: 1080px;
+    display: flex;
+    padding: 34px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    column-gap: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    flex-wrap: wrap;
+}
+
+@media  (max-width: 1108px){
+    .container-modal {
+        max-width: 550px;
+        row-gap: 40px;
+    }
+
+    .pic-modal {
+        height: 240px !important;
+    }
+}
+
+
+.pic-modal {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+row-gap: 16px;
+    background-image: url("http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/redu%C3%A7%C3%A3odecolisao.png");
+    background-position: bottom;
+    width: 472px;
+    height: 502px;
+  padding-left: 64px;
+  padding-right: 64px;
+    padding-bottom: 48px;
+    border-radius: 8px;
+}
+
+@media (max-width: 610px) {
+    .pic-modal {
+        width: 100%;
+        height: 150px !important;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .pic-modal h3{
+        font-size: 18px !important;
+    }
+
+    .pic-modal p {
+        font-size: 14px !important;
+    }
+
+    .title-closed h2 {
+        font-size: 18px !important;
+    }
+
+    .link-orca {
+        font-size: 16px !important;
+    }
+}
+
+.pic-modal h3 {
+    color: #FFF;
+font-family: Nunito;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%;
+}
+
+.pic-modal p {
+    color: #FFF;
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.conteudo-modal {
+    display: flex;
+    justify-content: space-around;
+    row-gap: 120px;
+    align-items: stretch;
+    flex-direction: column;
+    max-width: 516px;
+}
+
+@media (max-width: 610px) {
+    .conteudo-modal {
+        row-gap: 30px;
+    }
+
+}
+
+.title-closed {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+
+.title-closed button{
+    background: #F8E3E3;
+    border-radius: 4.945px;
+    padding: 6px 14px;
+    border: 1px solid #ff8a8a;
+    color: #791c1c;
+    cursor: pointer;
+}
+
+.title-closed h2 {
+    color: #232323;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.description {
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+
+.description h3 {
+    color: #232;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.description p {
+    color: #8B979F;
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.link-product {
+    color: #00A335;
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 19.2px */
+text-decoration-line: underline;
+}
+
+.produto {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid #E3E6E8;
+}
+
+.produto img {
+    width: 92px;
+    height: 92px;
+    margin-right: 24px;
+    background-size: cover;
+}
+
+.link-orca {
+    display: flex;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-decoration: none;
+    border-radius: 8px;
+    background: #00A335;
+}
+
+/* sessão Modal */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">
+        <div class="hero-container">
+            <h1>
+                Solução de segurança em tempo real para todos tipos de frota
+            </h1>
+            <p>
+                Quer mais informações sobre como adquirir a solução?
+            </p>
+            <a href="">
+                Solicite uma proposta
+            </a>
+        </div>
+        </div>
+    </header>
+
+
+
+    <div class="necessidade">
+        <div class="container-necessidade">
+            <h2>
+                Para cada necessidade, uma solução <span>Intelbras</span>
+            </h2>
+            <div class="conteudo-necessidade">
+                <div class="necessidades">
+                    <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/car.svg" alt="">
+                    <h3>
+                        Redução de colisões e conflitos
+                    </h3>
+                    <button class="modal-btn" data-model="modal-btn-one"><img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/plus.svg" alt=""></button>
+                </div>
+                <div class="necessidades">
+                    <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/nuvem.svg" alt="">
+                    <h3>
+                        Segurança e treinamento do motorista
+                    </h3>
+                    <button class="modal-btn" data-model="modal-btn-two"><img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/plus.svg" alt=""></button>
+                </div>
+                <div class="necessidades">
+                    <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/pc.svg" alt="">
+                    <h3>
+                        Monitoramentos em gerais
+                    </h3>
+                    <button class="modal-btn" data-model="modal-btn-three"><img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/plus.svg" alt=""></button>
+                </div>
+                <div class="necessidades">
+                    <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/banco.svg" alt="">
+                    <h3>
+                        Redução da fadiga e comportamentos de risco
+                    </h3>
+                    <button class="modal-btn" data-model="modal-btn-four"><img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/plus.svg" alt=""></button>
+                </div>
+                <div class="necessidades">
+                    <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/search.svg" alt="">
+                    <h3>
+                        Investigação de incidentes
+                    </h3>
+                    <button class="modal-btn" data-model="modal-btn-five"><img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/plus.svg" alt=""></button>
+                </div>
+                <div class="necessidades">
+                    <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/velocimentro.svg" alt="">
+                    <h3>
+                        Monitoramento de abastecimento
+                    </h3>
+                    <button class="modal-btn" data-model="modal-btn-six"><img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/plus.svg" alt=""></button>
+                </div>
+                <div class="necessidades">
+                    <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/radar.svg" alt="">
+                    <h3>
+                        Economias com melhoria de eficiência
+                    </h3>
+                    <button class="modal-btn" data-model="modal-btn-seven""><img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/plus.svg" alt=""></button>
+                </div>
+                <div class="necessidades">
+                    <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/doc.svg" alt="">
+                    <h3>
+                        Conformidades com politicas
+                    </h3>
+                    <button class="modal-btn" data-model="modal-btn-eight"><img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/plus.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modais -->
+
+    <div id="modal-one" class="modal">
+        <div class="container-modal">
+            <div class="pic-modal">
+                <h3>
+                    Redução de colisão
+                </h3>
+                <p>
+                    Conheça nosso produto de segurança veicular! Reduza colisões e previna acidentes graves. Dirija com tranquilidade e proteção.
+                </p>
+            </div>
+            <div class="conteudo-modal">
+                <div class="fix-modal">
+                <div class="title-closed">
+                    <h2>Produtos relacionados</h2>
+                    <button class="close">X</button>
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/iflet.png" alt="">
+                        <div class="description">
+                            <h3>
+                                iFleet Smart Pro
+                            </h3>
+                            <p>
+                                Detecta e alerta com análise de vídeo inteligente sinais de fadiga, distração e riscos de acidente durante a condução do veículo.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/sistema-de-analise-comportamental-veicular-ifleet-smart-pro">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/moovec.png" alt="">
+                        <div class="description">
+                            <h3>
+                                Moovsec
+                            </h3>
+                            <p>
+                                Plataforma de alta tecnologia, com interface intuitiva e fácil de usar, permitindo o controle total de frotas e dispositivos.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/software-de-gestao-e-videomonitoramento-de-frotas-moovsec">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+                <a class="link-orca" href="">Peça um orçamento agora</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="modal-two" class="modal">
+        <div class="container-modal">
+            <div class="pic-modal">
+                <h3>
+                    Segurança e treinamento do motorista
+                </h3>
+                <p>
+                    Detecta e alerta com análise de vídeo inteligente sinais de fadiga, distração e riscos de acidente durante a condução do veículo.
+                </p>
+            </div>
+            <div class="conteudo-modal">
+                <div class="fix-modal">
+                <div class="title-closed">
+                    <h2>Produtos relacionados</h2>
+                    <button class="close">X</button>
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/moovec.png" alt="">
+                        <div class="description">
+                            <h3>
+                                Moovsec
+                            </h3>
+                            <p>
+                                Plataforma de alta tecnologia, com interface intuitiva e fácil de usar, permitindo o controle total de frotas e dispositivos.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/software-de-gestao-e-videomonitoramento-de-frotas-moovsec">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/iflet.png" alt="">
+                        <div class="description">
+                            <h3>
+                                iFleet Smart Pro
+                            </h3>
+                            <p>
+                                Detecta e alerta com análise de vídeo inteligente sinais de fadiga, distração e riscos de acidente durante a condução do veículo.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/sistema-de-analise-comportamental-veicular-ifleet-smart-pro">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <a class="link-orca" href="">Peça um orçamento agora</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-three" class="modal">
+        <div class="container-modal">
+            <div class="pic-modal">
+                <h3>
+                    Monitoramentos em gerais
+                </h3>
+                <p>
+                    Detecta e alerta com análise de vídeo inteligente sinais de fadiga, distração e riscos de acidente durante a condução do veículo.
+                </p>
+            </div>
+            <div class="conteudo-modal">
+                <div class="fix-modal">
+                <div class="title-closed">
+                    <h2>Produtos relacionados</h2>
+                    <button class="close">X</button>
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/MVD%205404%20GW.png" alt="">
+                        <div class="description">
+                            <h3>
+                                MVD 5404 GW
+                            </h3>
+                            <p>
+                                DVR veicular com 4 canais de vídeo Multi HD, mais 4 canais IP, com possibilidade de conexões via Wi-Fi e 4G.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/gravador-veicular-da-linha-ifleet-mvd-5404-gw">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/VHDM.png" alt="">
+                        <div class="description">
+                            <h3>
+                                VHDM 3105
+                            </h3>
+                            <p>
+                                Para instalação dentro e fora de veículos, capte imagens em alta resolução e garanta a segurança em todo o trajeto
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/camera-hd-veicular-com-infravermelho-vhdm-3105-e">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <a class="link-orca" href="">Peça um orçamento agora</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-four" class="modal">
+        <div class="container-modal">
+            <div class="pic-modal">
+                <h3>
+                    Redução da fadiga e comportamento de risco
+                </h3>
+                <p>
+                    Detecta e alerta com análise de vídeo inteligente sinais de fadiga, distração e riscos de acidente durante a condução do veículo.
+                </p>
+            </div>
+            <div class="conteudo-modal">
+                <div class="fix-modal">
+                <div class="title-closed">
+                    <h2>Produtos relacionados</h2>
+                    <button class="close">X</button>
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/iflet.png" alt="">
+                        <div class="description">
+                            <h3>
+                                iFleet Smart Pro
+                            </h3>
+                            <p>
+                                Detecta e alerta com análise de vídeo inteligente sinais de fadiga, distração e riscos de acidente durante a condução do veículo.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/sistema-de-analise-comportamental-veicular-ifleet-smart-pro">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/moovec.png" alt="">
+                        <div class="description">
+                            <h3>
+                                Moovsec
+                            </h3>
+                            <p>
+                                Plataforma de alta tecnologia, com interface intuitiva e fácil de usar, permitindo o controle total de frotas e dispositivos.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/software-de-gestao-e-videomonitoramento-de-frotas-moovsec">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <a class="link-orca" href="">Peça um orçamento agora</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-five" class="modal">
+        <div class="container-modal">
+            <div class="pic-modal">
+                <h3>
+                    Investigação de incidentes
+                </h3>
+                <p>
+                    Detecta e alerta com análise de vídeo inteligente sinais de fadiga, distração e riscos de acidente durante a condução do veículo.
+                </p>
+            </div>
+            <div class="conteudo-modal">
+                <div class="fix-modal">
+                <div class="title-closed">
+                    <h2>Produtos relacionados</h2>
+                    <button class="close">X</button>
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/moovec.png" alt="">
+                        <div class="description">
+                            <h3>
+                                Moovsec
+                            </h3>
+                            <p>
+                                Plataforma de alta tecnologia, com interface intuitiva e fácil de usar, permitindo o controle total de frotas e dispositivos.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/software-de-gestao-e-videomonitoramento-de-frotas-moovsec">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/VHDM.png" alt="">
+                        <div class="description">
+                            <h3>
+                                VHDM 3105
+                            </h3>
+                            <p>
+                                Para instalação dentro e fora de veículos, capte imagens em alta resolução e garanta a segurança em todo o trajeto
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/camera-hd-veicular-com-infravermelho-vhdm-3105-e">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <a class="link-orca" href="">Peça um orçamento agora</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-six" class="modal">
+        <div class="container-modal">
+            <div class="pic-modal">
+                <h3>
+                    Monitoramento de abastecimento
+                </h3>
+                <p>
+                    Detecta e alerta com análise de vídeo inteligente sinais de fadiga, distração e riscos de acidente durante a condução do veículo.
+                </p>
+            </div>
+            <div class="conteudo-modal">
+                <div class="fix-modal">
+                <div class="title-closed">
+                    <h2>Produtos relacionados</h2>
+                    <button class="close">X</button>
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/MVD3404.png" alt="">
+                        <div class="description">
+                            <h3>
+                                MVD 3404 GW
+                            </h3>
+                            <p>
+                                Gravador veicular com 4 canais Multi HD, mais 1 canal IP de até 5 MP, e com possibilidade de conexões via Wi-Fi e 4G.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/gravador-veicular-da-linha-ifleet-mvd-3404-gw">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/VHDM%203125.png" alt="">
+                        <div class="description">
+                            <h3>
+                                VHDM 3125 G3
+                            </h3>
+                            <p>
+                                Capte imagens com maior alcance focal, garantindo mais segurança em todo o trajeto.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/cameras-veiculares-de-case-metalico-vhdm-3125-g3">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <a class="link-orca" href="">Peça um orçamento agora</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-seven" class="modal">
+        <div class="container-modal">
+            <div class="pic-modal">
+                <h3>
+                    Economias com melhoria de eficiência
+                </h3>
+                <p>
+                    Detecta e alerta com análise de vídeo inteligente sinais de fadiga, distração e riscos de acidente durante a condução do veículo.
+                </p>
+            </div>
+            <div class="conteudo-modal">
+                <div class="fix-modal">
+                <div class="title-closed">
+                    <h2>Produtos relacionados</h2>
+                    <button class="close">X</button>
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/moovec.png" alt="">
+                        <div class="description">
+                            <h3>
+                                Moovsec
+                            </h3>
+                            <p>
+                                Plataforma de alta tecnologia, com interface intuitiva e fácil de usar, permitindo o controle total de frotas e dispositivos.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/software-de-gestao-e-videomonitoramento-de-frotas-moovsec">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/MVD3404.png" alt="">
+                        <div class="description">
+                            <h3>
+                                MVD 3404 GW
+                            </h3>
+                            <p>
+                                Gravador veicular com 4 canais Multi HD, mais 1 canal IP de até 5 MP, e com possibilidade de conexões via Wi-Fi e 4G.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/gravador-veicular-da-linha-ifleet-mvd-3404-gw">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <a class="link-orca" href="">Peça um orçamento agora</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-eight" class="modal">
+        <div class="container-modal">
+            <div class="pic-modal">
+                <h3>
+                    Conformidades com politicas
+                </h3>
+                <p>
+                    Detecta e alerta com análise de vídeo inteligente sinais de fadiga, distração e riscos de acidente durante a condução do veículo.
+                </p>
+            </div>
+            <div class="conteudo-modal">
+                <div class="fix-modal">
+                <div class="title-closed">
+                    <h2>Produtos relacionados</h2>
+                    <button class="close">X</button>
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/moovec.png" alt="">
+                        <div class="description">
+                            <h3>
+                                Moovsec
+                            </h3>
+                            <p>
+                                Plataforma de alta tecnologia, com interface intuitiva e fácil de usar, permitindo o controle total de frotas e dispositivos.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/software-de-gestao-e-videomonitoramento-de-frotas-moovsec">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/MVD3404.png" alt="">
+                        <div class="description">
+                            <h3>
+                                MVD 3404 GW
+                            </h3>
+                            <p>
+                                Gravador veicular com 4 canais Multi HD, mais 1 canal IP de até 5 MP, e com possibilidade de conexões via Wi-Fi e 4G.
+                            </p>
+                            <a class="link-product" href="https://www.intelbras.com/pt-br/gravador-veicular-da-linha-ifleet-mvd-3404-gw">
+                                Ver produto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <a class="link-orca" href="">Peça um orçamento agora</a>
+            </div>
+        </div>
+    </div>
+   <!-- modais -->
+
+    <div class="iflet">
+        <div class="container-iflet">
+            <div class="conteudo-iflet">
+                <h3>
+                    iFleet Smart Pro
+                </h3>
+                <h2>
+                    Sistema de análise comportamental veicular
+                </h2>
+                <p>
+                    Detecta e alerta com análise de vídeo inteligente sinais de fadiga, distração e riscos de acidente durante a condução do veículo.
+                </p>
+                <a href="https://www.intelbras.com/pt-br/sistema-de-analise-comportamental-veicular-ifleet-smart-pro">
+                    Ver Produto
+                </a>
+            </div>
+            <div class="pic-iflet">
+                <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/image%2013.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="aplicacao">
+        <div class="container-aplicacao">
+            <div class="conteudo-aplicacao">
+                <h2>
+                    Cenários de aplicação
+                </h2>
+                <p>
+                    O monitoramento veicular pode ser utilizado em diferentes contextos, mas com um único resultado. Conheça alguns dos cenários de aplicação:
+                </p>
+            </div>
+            <div class="fotos-aplicacao">
+                <img class="logistica" src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/Logistica.png" alt="">
+                <img class="onibus" src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/onibus.png" alt="">
+                <img class="combustivel" src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/combustivel.png" alt="">
+                <img class="policia" src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/policia.png" alt="">
+                <img class="servicos" src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/servi%C3%A7os.png" alt="">
+                <img class="agro" src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/agro.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="cases">
+        <div class="container-cases">
+            <div class="conteudo-cases">
+                <h2>
+                    Conheça nossos cases
+                </h2>
+            </div>
+            <div class="video-cases">
+                <iframe src="https://www.youtube.com/embed/F-n9TiyBwM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="solucao">
+        <div class="container-solucao">
+            <div class="pic-solucao">
+                <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/produto%201.png" alt="">
+            </div>
+            <div class="conteudo-solucao">
+                <h2>
+                    O que compõe a solução de frotas Intelbras?
+                </h2>
+                <p>
+                    A solução é composta por equipamentos que realizam
+                    o monitoramento e o armazenamento de gravações e envio de
+                    alarmes para garantir a segurança de motoristas e passageiros.
+                </p>
+                <a href="https://www.intelbras.com/pt-br/seguranca-eletronica/monitoramento-veicular/allproducts">
+                    Confira nossa lista completa
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="solucao-second">
+        <div class="container-solucao">
+            <div class="conteudo-solucao">
+                <h2>
+                    Benefícios
+                </h2>
+                <p>
+                    Além da solução em monitoramento, a Intelbras oferece um portfólio de serviços que garantem mais segurança para os veículos.
+                </p>
+                <a href="https://www.intelbras.com/pt-br/">
+                    Para saber mais, clique aqui
+                </a>
+            </div>
+            <div class="pic-solucao">
+                <img src="http://homolog-backend.apps.intelbras.com.br/sites/default/files/2023-08/produto%202.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="depoimentos">
+        <div class="container-depoimentos">
+            <div class="conteudo-depoimentos">
+                <h3>Depoimentos</h3>
+                <h2>Também nos preocupamos com a experiência dos clientes</h2>
+            </div>
+            <div class="depoimento">
+
+            <div class="depoimento-one">
+                <h3>Thiago Morais</h3>
+                <legend>Comercial da AlarmCenter</legend>
+                <p>Parceria pautada no respeito, voz ativa no desenvolvimento das soluções Intelbras. Nosso sentimento em cada produto</p>
+            </div>
+
+            <div class="depoimento-one">
+                <h3>Caio Sales</h3>
+                <legend>Diretor de Operações - Serviam Tecnologia e Serviços</legend>
+                <p> Tenho segurança total com a Linha TMR da Intelbras. Como suporte completo, alta confiabilidade e excelência na aplicação </p>
+            </div>
+
+            <div class="depoimento-one">
+                <h3>Viveri engenharia</h3>
+                <legend>Integrador</legend>
+                <p>Em um Universo de infinitas possibilidades, a certeza da parceria Intelbras em nossos sonhos, projetos e obras é garantia de sucesso.</p>
+            </div>
+
+            <div class="depoimento-one">
+                <h3>Thiago Pifano Varela</h3>
+                <legend>Mobilecomm</legend>
+                <p>Parceria pautada pelo respeito, com voz ativa no desenvolvimento das soluções Intelbras. Nosso sentimento está em cada produto.</p>
+            </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+   <script>
+    // JavaScript
+    const modals = document.querySelectorAll('.modal');
+    const modalBtns = document.querySelectorAll('.modal-btn');
+    const closeBtns = document.querySelectorAll('.close');
+
+    modalBtns.forEach((btn, index) => btn.addEventListener('click', () => openModal(index)));
+    closeBtns.forEach(btn => btn.addEventListener('click', closeModal));
+    window.addEventListener('click', outsideClick);
+
+    function openModal(index) {
+        modals[index].style.display = 'flex';
+    }
+
+    function closeModal() {
+        modals.forEach(modal => modal.style.display = 'none');
+    }
+
+    function outsideClick(e) {
+        if (e.target.classList.contains('modal')) {
+            modals.forEach(modal => modal.style.display = 'none');
+        }
+    }
+</script>
+</body>
+</html>
